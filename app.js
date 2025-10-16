@@ -14,7 +14,7 @@ connect(); // MongoDB connect
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:5176",  // frontend URL
+    origin: "https://chatbot-two-red-94.vercel.app",  // frontend URL
     credentials: true
 }));
 app.use(morgan('dev'));
