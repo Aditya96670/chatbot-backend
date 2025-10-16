@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 function connect() {
-    mongoose.connect(process.env.MONGO_URI)
+    mongoose.connect(process.env.CHATBOT_MONGODB_URI)
         .then(() => {
             console.log("Connected to MongoDB");
         })
